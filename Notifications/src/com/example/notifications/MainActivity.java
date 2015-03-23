@@ -29,26 +29,7 @@ public class MainActivity extends Activity {
 				
 			}
 		});
-		//显示自定义的通知
-		button2= (Button)this.findViewById(R.id.button2);
-		button2.setOnClickListener(new View.OnClickListener() {
-			
-			@Override
-			public void onClick(View v) {
-				// TODO Auto-generated method stub
-				Toast toast = new Toast(MainActivity.this);
-				//加载自定义布局
-				View view = LayoutInflater.from(getApplicationContext()).inflate(R.layout.item, null);
-				ImageView imageView = (ImageView)view.findViewById(R.id.image);
-				imageView.setImageResource(R.drawable.accept);
-				TextView textView = (TextView)view.findViewById(R.id.text);
-				textView.setText("自定义的吐司通知");
-				toast.setDuration(1);
-				toast.setGravity(Gravity.CENTER, 0, 0);
-				toast.setView(view);
-				toast.show();
-			}
-		});
+		
 
 	}
 
